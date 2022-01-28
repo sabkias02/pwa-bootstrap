@@ -78,7 +78,6 @@ self.addEventListener('activate', function(event) {
       })
     );
   });
- 
   this.addEventListener('fetch', function(event) {
     console.log("Fetching ..." + event.request.url);
     event.respondWith(caches.match(event.request).then((response) => {
@@ -89,5 +88,4 @@ self.addEventListener('activate', function(event) {
             return fetch(event.request);
         }
     }))
- });
-  */
+ })*/
