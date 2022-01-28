@@ -1,0 +1,19 @@
+{
+    "theme_color" : "black",
+    "background_color"  : "white",
+    "display" : "standalone",
+    "scope" : "/",
+    "start_url" : "./index.html",
+    "name" : "Tourisme en Algerie",
+    "short_name" : "Diva",
+    "orientation":"portrait Primary",
+    "description" : "tourisme en Algerie",
+    "icons": [{
+        "src": "images/touch/homescreen48.jpg",
+        "sizes": "48x48",
+        "type": "image/jpg"
+      
+      }]
+     
+    }
+    
