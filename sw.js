@@ -74,6 +74,8 @@ self.addEventListener('activate', function(event) {
       caches.open('v1').then(function(cache) {
         return cache.addAll([
            '/',
+           '/index.html',
+
         ]);
       })
     );

@@ -3,16 +3,44 @@
     "background_color"  : "white",
     "display" : "standalone",
     "scope" : "/",
-    "start_url" : "./index.html",
+    "start_url" : "/index.html",
     "name" : "Tourisme en Algerie",
     "short_name" : "Diva",
-    "orientation":"portrait Primary",
     "description" : "tourisme en Algerie",
-    "icons": [{
-        "src": "images/touch/homescreen48.jpg",
+    
+      "icons": [{
+        "src": "/icon-48x48.png",
         "sizes": "48x48",
-        "type": "image/jpg"
+        "type": "image/png"
+      }, {
+        "src": "/icon-152x152.png",
+        "sizes": "152x152",
+        "type": "image/png"
+      },
       
+    
+    {
+        "src": "/icon-256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+    },
+    {
+        "src": "/icon-384x384.png",
+        "sizes": "384x384",
+        "type": "image/png"
+    },
+    {
+        "src": "/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }
+      
+      ,
+       {
+        "src": "/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose":"any maskable"
       }]
      
     }
