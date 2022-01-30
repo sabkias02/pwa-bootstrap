@@ -1,5 +1,5 @@
 
-var CACHE_NAME = 'my-site-cache-v1';
+/*var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
   '/',
   
@@ -67,14 +67,24 @@ self.addEventListener('activate', function(event) {
           );
         })
     );
-  });
+  });*/
 
-/*  this.addEventListener('install', function(event) {
+ this.addEventListener('install', function(event) {
     event.waitUntil(
       caches.open('v1').then(function(cache) {
         return cache.addAll([
-           '/',
-           '/index.html',
+           '/pwa-bootstrap/',
+           '/pwa-bootstrap/index.html',
+           '/pwa-bootstrap/Algerie.jpg',
+           '/pwa-bootstrap/icon-512x512.png',
+           '/pwa-bootstrap/icon-192x192.png',
+           '/pwa-bootstrap/icon-48x48.png',
+           '/pwa-bootstrap/icon-152x152.png',
+           '/pwa-bootstrap/index.css',
+           '/pwa-bootstrap/index.js',
+           '/pwa-bootstrap/Pic des singes.jpg',
+           '/pwa-bootstrap/Sheraton Annaba Hotel.jpg',
+           '/pwa-bootstrap/terrasse-restaurant-bekhchis.jpg',
 
         ]);
       })
@@ -90,4 +100,4 @@ self.addEventListener('activate', function(event) {
             return fetch(event.request);
         }
     }))
- })*/
+ })
