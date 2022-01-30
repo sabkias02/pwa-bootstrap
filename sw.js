@@ -75,16 +75,19 @@ self.addEventListener('activate', function(event) {
         return cache.addAll([
            '/pwa-bootstrap/',
            '/pwa-bootstrap/index.html',
-           '/pwa-bootstrap/Algerie.jpg',
+           '/pwa-bootstrap/Algerie.png',
            '/pwa-bootstrap/icon-512x512.png',
            '/pwa-bootstrap/icon-192x192.png',
            '/pwa-bootstrap/icon-48x48.png',
            '/pwa-bootstrap/icon-152x152.png',
            '/pwa-bootstrap/index.css',
            '/pwa-bootstrap/index.js',
-           '/pwa-bootstrap/Pic des singes.jpg',
-           '/pwa-bootstrap/Sheraton Annaba Hotel.jpg',
-           '/pwa-bootstrap/terrasse-restaurant-bekhchis.jpg'
+           '/pwa-bootstrap/Pic des singes.png',
+           '/pwa-bootstrap/Sheraton Annaba Hotel.png',
+           '/pwa-bootstrap/bootstrap-5.1.3-dist',
+           '/pwa-bootstrap/icons-1.7.2',
+           '/pwa-bootstrap/icons-1.7.2/font',
+           '/pwa-bootstrap/terrasse-restaurant-bekhchis.png'
 
         ]);
       })
