@@ -84,7 +84,7 @@ self.addEventListener('activate', function(event) {
            '/pwa-bootstrap/index.js',
            '/pwa-bootstrap/Pic des singes.jpg',
            '/pwa-bootstrap/Sheraton Annaba Hotel.jpg',
-           '/pwa-bootstrap/terrasse-restaurant-bekhchis.jpg',
+           '/pwa-bootstrap/terrasse-restaurant-bekhchis.jpg'
 
         ]);
       })
