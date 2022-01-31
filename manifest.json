@@ -1,35 +1,34 @@
 {
-    "theme_color" : "black",
-    "background_color"  : "white",
-    "display" : "standalone",
-    "scope" : "/",
-    "start_url" : "index.html",
-    "name" : "Tourisme en Algerie",
-    "short_name" : "Diva",
-    "description" : "tourisme en Algerie",
+  "theme_color" : "black",
+  "background_color"  : "white",
+  "display" : "standalone",
+  "scope" : "/",
+  "start_url" : "/pwa-bootstrap/index.html",
+  "name" : "Tourisme en Algerie",
+  "short_name" : "Diva",
+  "description" : "tourisme en Algerie",
+  
+    "icons": [{
+      "src": "/pwa-bootstrap/icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }, {
+      "src": "/pwa-bootstrap/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+      {
+      "src": "/pwa-bootstrap/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+  }
     
-      "icons": [{
-        "src": "/pwa-bootstrap/icon-48x48.png",
-        "sizes": "48x48",
-        "type": "image/png"
-      }, {
-        "src": "/pwa-bootstrap/icon-152x152.png",
-        "sizes": "152x152",
-        "type": "image/png"
-      },
-        {
-        "src": "/pwa-bootstrap/icon-512x512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-    }
-      
-      ,
-       {
-        "src": "/pwa-bootstrap/icon-192x192.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose":"any maskable"
-      }]
-     
-    }
-    
+    ,
+     {
+      "src": "/pwa-bootstrap/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose":"any maskable"
+    }]
+   
+  }
