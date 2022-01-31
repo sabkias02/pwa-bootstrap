@@ -3,7 +3,7 @@
     "background_color"  : "white",
     "display" : "standalone",
     "scope" : "/",
-    "start_url" : "/pwa-bootstrap/index.html",
+    "start_url" : "index.html",
     "name" : "Tourisme en Algerie",
     "short_name" : "Diva",
     "description" : "tourisme en Algerie",
