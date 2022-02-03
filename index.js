@@ -17,13 +17,13 @@ window.addEventListener('beforeinstallprompt', (e) => {
     console.log(`'beforeinstallprompt' event was fired.`);
     const installAppButton = document.getElementById('installAppButton');
     if (installAppButton) {
-    installAppButton.addEventListener('click', function () {
-     deferredPrompt.prompt();
- })
- }
+        installAppButton.addEventListener('click', function () {
+            deferredPrompt.prompt();
+        })
+    }
 });
 var option = {
-animation: true, delay: 4000
+    animation: true, delay: 4000
 
 };
 function Toasty() {
