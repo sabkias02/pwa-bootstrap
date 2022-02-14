@@ -35,13 +35,14 @@
         }
     }))
  })*/
- /* function enregistrerTagBgSync() {
- if ('serviceWorker' in navigator && 'SyncManager' in window) {
-     navigator.serviceWorker.ready.then(function (reg) {
-         return reg.sync.register('mon-tag');
-     });
- };
-}*/ 
+ 
+this.addEventListener('activate', function(event) {
+  event.waitUntil(function(){
+    
+  }
+  );
+});
+
 this.addEventListener('fetch', function(event) {
  console.log("Fetching ..." + event.request.url);
  event.respondWith(cacheOrNetwork(event.request).catch(() => fallbackVersPageHorsLigne()));
@@ -62,7 +63,7 @@ return caches.open('v1').then(function (cache) {
 }
 
 function fallbackVersPageHorsLigne() {
-return caches.match('/pageHorsLigne.html');
+return caches.match('/pwa-bootstrap/pageHorsLigne.html');
 } 
 
 

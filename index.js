@@ -2,6 +2,13 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js');
     console.log('registered successfully')
 };
+function enregistrerTagBgSync() {
+    if ('serviceWorker' in navigator && 'SyncManager' in window) {
+        navigator.serviceWorker.ready.then(function (reg) {
+            return reg.sync.register('mon-tag');
+        });
+    };
+   } 
 Toasty();
 
 // Initialize deferredPrompt for use later to show browser install prompt.
