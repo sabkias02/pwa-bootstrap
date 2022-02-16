@@ -2,13 +2,13 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js');
     console.log('registered successfully')
 };
-function enregistrerTagBgSync() {
+/*function enregistrerTagBgSync() {
     if ('serviceWorker' in navigator && 'SyncManager' in window) {
         navigator.serviceWorker.ready.then(function (reg) {
             return reg.sync.register('mon-tag');
         });
     };
-   } 
+   } */
 Toasty();
 
 // Initialize deferredPrompt for use later to show browser install prompt.
@@ -38,6 +38,36 @@ function Toasty() {
     var toastElement = new bootstrap.Toast(toastHTMLElement, option);
     toastElement.show();
 }
+
+console.log(Notification.permission);
+
+
+input = document.getElementById('visible');
+     
+input.addEventListener('click', function(){
+   input.style.display = 'none';
+});
+
+
+
+function meNotifier() {
+  Notification.requestPermission().then(function(result) {
+    console.log("permission donnée");
+  });
+ }
+
+ function envoyerNotificationThreadUtilisateur() {
+  if (Notification.permission === 'granted') {
+      var options = {
+          body: 'Ma première notification depuis index.js',
+          requireInteraction: true
+      };
+ 
+       new Notification('Hello depuis index.js', options);
+  } else {
+      console.log("aucune notification car non permis");
+  }
+ }
 
 
  
