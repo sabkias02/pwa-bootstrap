@@ -2,13 +2,13 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js');
     console.log('registered successfully')
 };
-/*function enregistrerTagBgSync() {
-    if ('serviceWorker' in navigator && 'SyncManager' in window) {
-        navigator.serviceWorker.ready.then(function (reg) {
-            return reg.sync.register('mon-tag');
-        });
-    };
-   } */
+
+if ('serviceWorker' in navigator && 'SyncManager' in window) {
+    navigator.serviceWorker.ready.then(function (reg) {
+        return reg.sync.register('c');
+    });
+};
+
 Toasty();
 
 // Initialize deferredPrompt for use later to show browser install prompt.
@@ -42,34 +42,32 @@ function Toasty() {
 console.log(Notification.permission);
 
 
-input = document.getElementById('visible');
-     
-input.addEventListener('click', function(){
-   input.style.display = 'none';
-});
 
-
-
+//la permission pour la notification
 function meNotifier() {
-  Notification.requestPermission().then(function(result) {
-    console.log("permission donnée");
-  });
- }
+    Notification.requestPermission().then(function (result) {
+        console.log("permission donnée");
 
- function envoyerNotificationThreadUtilisateur() {
-  if (Notification.permission === 'granted') {
-      var options = {
-          body: 'Ma première notification depuis index.js',
-          requireInteraction: true
-      };
- 
-       new Notification('Hello depuis index.js', options);
-  } else {
-      console.log("aucune notification car non permis");
-  }
- }
+    })
+}
+//envoie de la notication avec le boutton rafraichir 
+function envoyerNotificationThreadUtilisateur() {
+    if (Notification.permission === 'granted') {
+        var options = {
+            body: 'Ma première notification depuis index.js',
+            requireInteraction: true
+        };
+
+        new Notification('Hello depuis index.js', options);
+    } else {
+        console.log("aucune notification car non permis");
+    }
 
 
- 
+}
+
+
+
+
 
 
